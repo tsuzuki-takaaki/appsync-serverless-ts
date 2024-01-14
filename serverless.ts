@@ -3,7 +3,7 @@ import type { AWS } from '@serverless/typescript';
 const serverlessConfiguration: AWS = {
   service: 'appsync-serverless-ts',
   frameworkVersion: '3',
-  plugins: ['serverless-esbuild'],
+  plugins: ['serverless-esbuild', 'serverless-appsync-plugin'],
   provider: {
     name: 'aws',
     region: 'ap-northeast-1',
