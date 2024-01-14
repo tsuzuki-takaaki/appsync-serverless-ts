@@ -37,4 +37,5 @@ export type PutHogeMaruInput = {
 export type Query = {
   __typename?: 'Query';
   listHogeMarus?: Maybe<Array<Maybe<HogeMaru>>>;
+  listHogeMarusJs?: Maybe<Array<Maybe<HogeMaru>>>;
 };

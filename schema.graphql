@@ -9,6 +9,7 @@ input PutHogeMaruInput {
 
 type Query {
   listHogeMarus: [HogeMaru]
+  listHogeMarusJs: [HogeMaru]
 }
 
 type Mutation {
