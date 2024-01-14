@@ -1,0 +1,21 @@
+type HogeMaru {
+  id: ID!
+  name: String!
+}
+
+input PutHogeMaruInput {
+  name: String!
+}
+
+type Query {
+  listHogeMarus: [HogeMaru]
+}
+
+type Mutation {
+  putHogeMaru(input: PutHogeMaruInput): HogeMaru
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
