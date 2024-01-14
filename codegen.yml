@@ -1,0 +1,7 @@
+overwrite: true # TODO
+schema:
+  - schema.graphql #your schema file
+generates:
+  appsync.d.ts:
+    plugins:
+      - typescript
