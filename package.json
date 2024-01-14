@@ -16,6 +16,7 @@
     "esbuild": "^0.14.11",
     "serverless": "^3.0.0",
     "serverless-appsync-plugin": "^2.6.0",
+    "serverless-better-credentials": "^2.0.0",
     "serverless-esbuild": "^1.23.3",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.9.0",
