@@ -1,4 +1,8 @@
 # Commands
+- build(See `package.json`)
+```sh
+% npm run build
+```
 - When you deploy to AWS(with SSO)
 ```sh
 % serverless deploy --verbose --aws-profile your_profile_name
@@ -7,3 +11,4 @@
 ```sh
 % serverless remove --verbose --aws-profile your_profile_name
 ```
+
