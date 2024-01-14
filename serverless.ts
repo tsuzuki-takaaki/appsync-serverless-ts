@@ -30,9 +30,9 @@ const serverlessConfiguration: any = { // TODO: Type -> const serverlessConfigur
         response: './mapping-templates/list_hoge_marus/response.vtl'
       },
       'Query.listHogeMarusJs': {
-        kind: 'UNIT',
-        dataSource: 'hogeMaruSource',
-        code: './resolvers/list_hoge_marus.js'
+        functions: [
+          { dataSource: 'hogeMaruSource', code: './resolvers/list_hoge_marus.js' }
+        ]
       },
       'Mutation.putHogeMaru': {
         kind: 'UNIT',
