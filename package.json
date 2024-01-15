@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "type-generate": "graphql-codegen",
-    "build": "esbuild src/*.ts --outdir=resolvers --bundle --external:\"@aws-appsync/utils\" --format=esm --platform=node --target=esnext"
+    "build": "esbuild src/**/*.ts --outdir=resolvers --bundle --external:\"@aws-appsync/utils\" --format=esm --platform=node --target=esnext"
   },
   "engines": {
     "node": ">=14.15.0"

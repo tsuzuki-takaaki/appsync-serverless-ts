@@ -1,4 +1,4 @@
-// src/list_hoge_marus.ts
+// src/list_hoge_marus/list_hoge_marus.ts
 function request(ctx) {
   return {
     "operation": "Scan"
