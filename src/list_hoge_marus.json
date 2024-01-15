@@ -1,0 +1,16 @@
+{
+  "arguments" : {},
+  "source" : {},
+  "result" : {
+    "id" : 1,
+    "name" : "black_grey"
+  },
+  "identity": {
+      "sub" : "uuid",
+      "issuer" : " https://cognito-idp.{region}.amazonaws.com/{userPoolId}",
+      "username" : "Nadia",
+      "claims" : { },
+      "sourceIp" :[  "x.x.x.x" ],
+      "defaultAuthStrategy" : "ALLOW"
+  }
+}

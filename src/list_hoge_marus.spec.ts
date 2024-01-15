@@ -8,8 +8,8 @@ const client = new AppSyncClient({
 });
 const file = './resolvers/list_hoge_marus.js'
 
-describe('sample test', () => {
-  test('sample test', async () => {
+describe('list hoge marus', () => {
+  test('request', async () => {
     const context = {}
     const input: EvaluateCodeCommandInput = {
       runtime: { name: 'APPSYNC_JS', runtimeVersion: '1.0.0' },
@@ -21,7 +21,24 @@ describe('sample test', () => {
     const evaluateCodeCommand = new EvaluateCodeCommand(input);
     const response = await client.send(evaluateCodeCommand);
 
-    // TODO: Add asertion
     console.log(response.evaluationResult);
+    // TODO: Add asertion
+    // {"operation":"Scan"}
+  })
+  test('response', async () => {
+    const context = await readFile('./src/list_hoge_marus.json', { encoding: 'utf8' })
+    const input: EvaluateCodeCommandInput = {
+      runtime: { name: 'APPSYNC_JS', runtimeVersion: '1.0.0' },
+      code: await readFile(file, { encoding: 'utf8' }),
+      context: context,
+      function: 'response',
+    };
+
+    const evaluateCodeCommand = new EvaluateCodeCommand(input);
+    const response = await client.send(evaluateCodeCommand);
+
+    console.log(response.evaluationResult);
+    // TODO: Add asertion
+    // {"id":1,"name":"black_grey"}
   })
 })

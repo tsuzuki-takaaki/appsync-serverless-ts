@@ -5,7 +5,7 @@ function request(ctx) {
   };
 }
 function response(ctx) {
-  return ctx.result.items;
+  return ctx.result;
 }
 export {
   request,
