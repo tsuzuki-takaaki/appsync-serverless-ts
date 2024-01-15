@@ -26,7 +26,7 @@ describe('list hoge marus', () => {
     // {"operation":"Scan"}
   })
   test('response', async () => {
-    const context = await readFile('./src/list_hoge_marus.json', { encoding: 'utf8' })
+    const context = await readFile('./src/list_hoge_marus/list_hoge_marus.json', { encoding: 'utf8' })
     const input: EvaluateCodeCommandInput = {
       runtime: { name: 'APPSYNC_JS', runtimeVersion: '1.0.0' },
       code: await readFile(file, { encoding: 'utf8' }),
