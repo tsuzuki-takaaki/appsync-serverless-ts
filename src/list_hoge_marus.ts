@@ -7,8 +7,8 @@ export function request(ctx: Context): DynamoDBScanRequest {
   };
 }
 
-export function response(ctx: Context): Query['listHogeMarusJs'] {
-  return ctx.result.items;
+export function response(ctx: Context<object, object, object, object, Query['listHogeMarusJs']>) {
+  return ctx.result;
 }
 
 // For example, if you're resolving the author field of the following query:
