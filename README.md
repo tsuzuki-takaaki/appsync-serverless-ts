@@ -4,7 +4,7 @@
 % npm run build
 ```
 
-- Generate Type from schema.grapphql
+- Generate Type from `schema.grapphql`
 ```sh
 % npm run type-generate
 ```
