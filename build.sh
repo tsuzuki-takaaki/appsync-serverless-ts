@@ -1,4 +1,4 @@
-path=$(find src -type f -name '*.ts' | grep -v 'spec')
+path=$(find src/appsync -type f -name '*.ts' | grep -v 'spec')
 
 npx esbuild $path \
 --outdir=resolvers \
