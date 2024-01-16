@@ -4,6 +4,11 @@
 % npm run build
 ```
 
+- Test(You need to login with SSO before running test)
+```sh
+% npm run test
+```
+
 - Generate Type from `schema.grapphql`
 ```sh
 % npm run type-generate
