@@ -8,6 +8,7 @@ export function request(ctx: Context): DynamoDBScanRequest {
 }
 
 export function response(ctx: Context<object, object, object, object, Query['listHogeMarusJs']>) {
+  // TODO: Check interface -> if you want to return array, return ctx.result.items
   return ctx.result;
 }
 
